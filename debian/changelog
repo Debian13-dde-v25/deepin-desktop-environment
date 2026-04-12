@@ -1,3 +1,19 @@
+deepin-desktop-environment (2026.04.01+deb13u1) unstable; urgency=medium
+
+  * align metapackages with the current Debian 13 DDE25 working target
+  * pull dde-tray-loader into the core install set
+  * include current Debian 13 runtime-side DDE components such as
+    dde-crypto, deepin-keyring-whitebox, deepin-recovery-plugin,
+    deepin-sound-theme, and deepin-sync-daemon
+  * recommend dde-calendar and deepin-album on x86_64 instead of keeping
+    them riscv64-only
+  * include deepin-data-transfer and uos-ai-model-plugin in extras
+  * drop deepin-app-store and deepin-home-appstore-daemon from the default
+    extras set while keeping deepin-app-store-runtime for
+    deepin-deb-installer
+
+ -- guanzi008 <245205080@qq.com>  Sun, 12 Apr 2026 15:30:00 +0800
+
 deepin-desktop-environment (2026.04.01) unstable; urgency=medium
 
   * remove systemd-resolved, it causes VPN connection issues.
